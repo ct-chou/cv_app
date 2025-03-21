@@ -19,7 +19,7 @@ function Contact () {
     }
 
     function handleEdit() {
-        setEditMode(!editMode);
+        setEditMode(true);
     }
 
     return(
@@ -31,28 +31,32 @@ function Contact () {
                         <label>Name:  
                             <input 
                                 label="name" 
-                                text={value.name} 
+                                value={value.name}
                                 type='text' 
                                 name='name'
-                                placeholder='Enter name'/>
+                                placeholder='Enter name'
+                                onChange = {e => setValue({...value, name: e.target.value})}
+                            />
                         </label>
                         <label> 
                             Email: <nbsp/>
                             <input 
                                 label="email"
-                                text={value.email}
+                                value={value.email}
                                 type="email" 
                                 name="email" 
                                 placeholder="Enter your email" 
+                                onChange= {e => setValue({...value, email: e.target.value})}
                             />
                         </label>
                         <label>Phone: <nbsp/>
                             <input 
                                 label="Phone"
                                 type="tel" 
-                                text={value.phone}
+                                value={value.phone}
                                 name="phone" 
                                 placeholder="Enter your phone number" 
+                                onChange= {e => setValue({...value, phone: e.target.value})}
                             />
                         </label>
                         <button 
