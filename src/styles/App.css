@@ -1,0 +1,17 @@
+#container-main {
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  height: 100vh;
+}
+
+header {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  background: white;
+  max-width: 800px;
+  min-width: 60vw;
+  text-align: center;
+}
