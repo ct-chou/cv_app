@@ -1,13 +1,38 @@
 #contact-container {
     display: flex;
     flex-direction: column;
-    align-items: left;
+    align-items: flex-start;
     /* max-height: 20vh; */
-    background-color: bisque;
+    background-color: white;
     max-width: 800px;
     min-width: 60vw;
     border-bottom: 0.5px solid black;
 }
+
+#contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0.5rem;
+}
+
+#contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0.5rem;
+}
+
+#contact-form label {
+    margin-top: 0.5rem;
+}
+
+#contact-info p {
+    margin-top: 0.5rem;
+    margin-left: 0.5rem;
+    margin-bottom: 0;
+}
+
 
 h1 {
     margin: 0.5rem;
@@ -34,10 +59,6 @@ label {
     margin-left: 0.5rem;
 }
 
-#contact-buttons {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.contact-button {
     margin: 0.5rem;
-    gap: 0.5rem;
 }
