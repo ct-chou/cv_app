@@ -1,12 +1,12 @@
 import './styles/Experience.css';
 import {useState} from 'react';
 
-function Experience() {
+function Experience({id, addExperience, removeExperience}) {
     const [experience, setExperience] = useState({company:'', title:'', description:'', startDate:'', endDate:''})
     const [editMode, setEditMode] = useState(true);
 
-    function handleSubmit () {
-        // setExperience(experience);
+    function handleSubmit (e) {
+        e.preventDefault();
         setEditMode(false);
     }
 
@@ -59,7 +59,7 @@ function Experience() {
                     </label>
                 </form>
                 <button type="submit" form='experience-form'>
-                    submit
+                    Submit
                 </button>
             </>
             ) : ( 
@@ -71,8 +71,18 @@ function Experience() {
                     <p><span className='bold'>Date: </span> {experience.startDate} - {experience.endDate}</p>
                 </div>    
                 <button onClick={enterEditMode}>
-                    edit
+                    Edit
                 </button>
+                <button onClick={addExperience}>
+                    Add More
+                </button>
+                { id!== 0 &&
+                    <button 
+                        onClick={() => removeExperience(id)}
+                    >
+                        Delete
+                    </button>
+                }   
             </div>
             )}
         </div>
