@@ -27,8 +27,6 @@ function Education() {
 
     return (
         <div id='education-container'>
-            <h1>Education</h1>
-            <hr></hr>
             {editMode ? (
                 <>
                 <form className='education-form' id='education-form' onSubmit={handleSubmit}>

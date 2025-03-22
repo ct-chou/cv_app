@@ -24,8 +24,6 @@ function Contact () {
 
     return(
         <div id='contact-container'>
-            <h1>Contact Details</h1>
-            <hr></hr>
             {editMode ? (
                     <form id='contact-form' onSubmit={handleSubmit}>
                         <label>
