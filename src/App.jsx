@@ -15,6 +15,8 @@ function App() {
       <hr></hr>
       <Education />
       <Education />
+      <h1>Experience</h1>
+      <hr></hr>
       <Experience />
     </div>
   )

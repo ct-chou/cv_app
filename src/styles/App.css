@@ -1,19 +1,9 @@
 #container-main {
-  background-color: aqua;
+  background-color: rgb(191, 255, 0);
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
   height: 100vh;
   max-width: 800px;
   min-width: 60vw;
 }
 
-header {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  background: white;
-  max-width: 800px;
-  min-width: 60vw;
-  text-align: center;
-}
