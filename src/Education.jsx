@@ -1,7 +1,7 @@
 import {useState} from 'react'
 import './styles/Education.css';
 
-function Education() {
+function Education({id, addEducation, removeEducation}) {
     const [formData, setFormData] = useState({school: '', degree: '', major: '', minor: '', startDate: '', endDate: ''});
     const [editMode, setEditMode ] = useState(true);
 
@@ -87,6 +87,7 @@ function Education() {
                     </label>
                     
                 </form>
+
                 <button 
                         type="submit" 
                         className="education-button"
@@ -110,6 +111,20 @@ function Education() {
                 >
                     Edit
                 </button>
+                <button 
+                    className="education-button"
+                    onClick={addEducation}
+                >
+                    Add More
+                </button>
+                {id !==0 && 
+                    <button 
+                        className="education-button"
+                        onClick={() => removeEducation(id)}
+                    >
+                        Delete
+                    </button>
+                }
             </div>
             )}
             
