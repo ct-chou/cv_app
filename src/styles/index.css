@@ -35,3 +35,12 @@ hr {
     border-style: inset;
     border-width: 0px;
 }
+
+button {
+    margin: 1rem;
+  }
+
+  
+.bold {
+    font-weight: bold;
+}
