@@ -28,7 +28,8 @@ function Contact () {
             <hr></hr>
             {editMode ? (
                     <form id='contact-form' onSubmit={handleSubmit}>
-                        <label>Name:  
+                        <label>
+                            Name: {' '}
                             <input 
                                 label="name" 
                                 value={value.name}
@@ -39,7 +40,7 @@ function Contact () {
                             />
                         </label>
                         <label> 
-                            Email: <nbsp/>
+                            Email: {' '} 
                             <input 
                                 label="email"
                                 value={value.email}
@@ -49,7 +50,7 @@ function Contact () {
                                 onChange= {e => setValue({...value, email: e.target.value})}
                             />
                         </label>
-                        <label>Phone: <nbsp/>
+                        <label>Phone:  {' '}
                             <input 
                                 label="Phone"
                                 type="tel" 
@@ -61,7 +62,7 @@ function Contact () {
                         </label>
                         <button 
                             type="submit" 
-                            class="contact-button"
+                            className="contact-button"
                         >
                             Submit
                         </button>
@@ -73,7 +74,7 @@ function Contact () {
                         <p>Email: {value.email}</p>
                         <p>Phone: {value.phone}</p>
                         <button type="button" 
-                                class="contact-button" 
+                                className="contact-button" 
                                 onClick={handleEdit}
                         >
                             Edit
