@@ -1,4 +1,4 @@
-import './styles/Experience.css';
+import '../styles/Experience.css';
 import {useState} from 'react';
 
 function Experience({id, addExperience, removeExperience}) {
