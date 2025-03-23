@@ -17,9 +17,6 @@
   gap: 0.5rem;
 }
 
-.experience-form label {
-  border: 1px solid black;
-}
 
 .experience-form > :nth-child(3) {
   grid-column: span 2; /* Make the second row span both columns */
