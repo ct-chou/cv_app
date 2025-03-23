@@ -19,7 +19,7 @@ function Experience({id, addExperience, removeExperience}) {
             {editMode ? (
             <>
                 <form className="experience-form" id="experience-form" onSubmit={handleSubmit}>
-                    <label>Company:
+                    <label>Company: {' '}
                         <input 
                             type="text" 
                             value={experience.company} 
@@ -27,7 +27,7 @@ function Experience({id, addExperience, removeExperience}) {
                             onChange={(e) => setExperience({...experience, company: e.target.value})}
                         />
                     </label>
-                    <label>Title:
+                    <label>Title: {' '}
                         <input 
                             type="text" 
                             value={experience.title} 
@@ -35,7 +35,7 @@ function Experience({id, addExperience, removeExperience}) {
                             onChange={(e) => setExperience({...experience, title: e.target.value})}
                         />
                     </label>
-                    <label>Description:
+                    <label>Description: {' '}
                         <input 
                             type="text" 
                             value={experience.description} 
@@ -43,7 +43,7 @@ function Experience({id, addExperience, removeExperience}) {
                             onChange={(e) => setExperience({...experience, description: e.target.value})}
                         />
                     </label>
-                    <label>Date:
+                    <label>Date: {' '}
                         <input 
                             type="date" 
                             name="dateStart"    
