@@ -1,5 +1,5 @@
 import {useState} from 'react'
-import './styles/Education.css';
+import '../styles/Education.css';
 
 function Education({id, addEducation, removeEducation}) {
     const [formData, setFormData] = useState({school: '', degree: '', major: '', minor: '', startDate: '', endDate: ''});
@@ -7,21 +7,10 @@ function Education({id, addEducation, removeEducation}) {
 
     function handleSubmit(e) {
         e.preventDefault();
-        const newFormData = new FormData(e.target);
-        const newValues = {
-                school: newFormData.get('school'),
-                degree: newFormData.get('degree'),
-                major: newFormData.get('major'),
-                minor: newFormData.get('minor'),
-                startDate: newFormData.get('startDate'),
-                endDate: newFormData.get('endDate')
-        };
-        setFormData(newValues);
         setEditMode(false);
     }
     
     function handleEdit() {
-        console.log('edit');
         setEditMode(true);
     }
 
