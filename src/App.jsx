@@ -1,7 +1,7 @@
 import './styles/App.css'
-import Contact from './Contact.jsx'
-import Education from './Education.jsx'
-import Experience from './Experience.jsx'
+import Contact from './components/Contact.jsx'
+import Education from './components/Education.jsx'
+import Experience from './components/Experience.jsx'
 import {useState} from 'react'
 
 function App() {
